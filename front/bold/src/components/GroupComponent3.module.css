@@ -1,0 +1,233 @@
+.frameChild,
+.profileBackgroundIcon {
+  align-self: stretch;
+  position: relative;
+}
+.frameChild {
+  height: 458px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  display: none;
+}
+.profileBackgroundIcon {
+  flex: 1;
+  border-radius: var(--br-xl) var(--br-xl) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.matthieu {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 92px;
+  z-index: 2;
+}
+.iconBackground,
+.profileIcon {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 15px;
+  height: 21px;
+  z-index: 2;
+}
+.iconBackground {
+  top: 10px;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  width: 6px;
+  height: 6px;
+}
+.iconDetails {
+  width: 30px;
+  height: 21px;
+  position: relative;
+}
+.profileIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.paris {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 41px;
+  z-index: 2;
+}
+.freelancerLocation,
+.profileDetails {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.freelancerLocation {
+  flex-direction: column;
+  padding: var(--padding-7xs) 0 0;
+  font-size: var(--font-size-base);
+}
+.profileDetails {
+  flex-direction: row;
+  gap: var(--gap-5xs-5);
+}
+.expertEnCyberscurit {
+  position: relative;
+  font-weight: 500;
+  z-index: 2;
+}
+.skillContainerChild {
+  align-self: stretch;
+  height: 14.6px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.skillContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.separator {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 22px;
+  z-index: 2;
+}
+.freelancerTitle,
+.skillContainerParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.skillContainerParent {
+  width: 104px;
+  flex-direction: row;
+  font-size: var(--font-size-sm);
+}
+.freelancerTitle {
+  flex-direction: column;
+  padding: 0 0 var(--padding-smi);
+}
+.cyberscurit {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-darkslateblue-200);
+  text-align: left;
+  display: inline-block;
+  min-width: 99px;
+}
+.skillDetails {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-8xs) var(--padding-3xs);
+  background-color: var(--color-darkslateblue-300);
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 2;
+}
+.skillDetails:hover {
+  background-color: var(--color-slateblue-200);
+}
+.devops {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 55px;
+}
+.devOpsSkills,
+.freelancerSkills {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.devOpsSkills {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-darkslateblue-300);
+  padding: var(--padding-8xs) var(--padding-4xs);
+  z-index: 2;
+}
+.freelancerSkills {
+  padding: 0 0 var(--padding-7xs);
+  gap: var(--gap-2xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslateblue-200);
+}
+.jour {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 105px;
+  z-index: 2;
+}
+.price {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.profileContent,
+.profileInfo,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.profileInfo {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.profileContent,
+.rectangleParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-mid) 0 var(--padding-lg);
+  box-sizing: border-box;
+}
+.rectangleParent {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gainsboro);
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-base);
+  gap: var(--gap-2xs);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 450px) {
+  .expertEnCyberscurit,
+  .jour,
+  .matthieu {
+    font-size: var(--font-size-base);
+  }
+}

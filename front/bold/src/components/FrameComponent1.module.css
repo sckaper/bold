@@ -1,0 +1,213 @@
+.frameChild {
+  height: 86px;
+  width: 1921px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-whitesmoke);
+  display: none;
+  max-width: 100%;
+}
+.cybermatch,
+.entreprise {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  z-index: 2;
+}
+.cybermatch {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.entreprise {
+  font-weight: 500;
+  display: inline-block;
+  min-width: 101px;
+}
+.freelanceBlogLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xs) 0 0;
+}
+.freelances,
+.notreHistoire {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  z-index: 2;
+}
+.freelances {
+  display: inline-block;
+  min-width: 110px;
+  cursor: pointer;
+}
+.notreHistoire {
+  white-space: nowrap;
+}
+.freelanceBlogLinks1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xs) 0 0;
+}
+.blog {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 45px;
+  z-index: 2;
+}
+.freelanceBlogLinksParent {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.frameContainer {
+  margin: 0;
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-7xs) 0 0;
+  box-sizing: border-box;
+}
+.cybermatchParent,
+.frameContainer,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.cybermatchParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-47xl);
+}
+.frameWrapper {
+  width: 826px;
+  flex-direction: column;
+  padding: var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+}
+.frameItem {
+  height: 48px;
+  width: 205px;
+  position: relative;
+  border-radius: var(--br-23xl);
+  background-color: var(--color-tomato);
+  display: none;
+}
+.crerUnCompte {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  z-index: 1;
+}
+.rectangleGroup {
+  border-radius: var(--br-23xl);
+  background-color: var(--color-tomato);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) var(--padding-base) var(--padding-4xs)
+    var(--padding-lg);
+  white-space: nowrap;
+}
+.meConnecter,
+.signup {
+  cursor: pointer;
+  z-index: 2;
+}
+.signup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.meConnecter {
+  text-decoration: underline;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  white-space: nowrap;
+}
+.loginButton,
+.rectangleParent,
+.signupParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.loginButton {
+  flex-direction: column;
+  padding: var(--padding-4xs) 0 0;
+  color: var(--color-black);
+}
+.rectangleParent,
+.signupParent {
+  flex-direction: row;
+  gap: var(--gap-41xl);
+  max-width: 100%;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.rectangleParent {
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-whitesmoke);
+  justify-content: center;
+  padding: var(--padding-lgi) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-433xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1325px) {
+  .frameContainer {
+    display: none;
+  }
+  .rectangleParent {
+    gap: var(--gap-207xl);
+  }
+}
+@media screen and (max-width: 900px) {
+  .cybermatchParent {
+    gap: var(--gap-14xl);
+  }
+  .rectangleParent {
+    gap: var(--gap-94xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .freelanceBlogLinksParent {
+    display: none;
+  }
+  .cybermatchParent {
+    gap: var(--gap-base);
+  }
+  .signupParent {
+    gap: var(--gap-11xl);
+  }
+  .rectangleParent {
+    gap: var(--gap-37xl);
+  }
+}

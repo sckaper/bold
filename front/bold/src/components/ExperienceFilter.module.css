@@ -1,0 +1,234 @@
+.container {
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  border-radius: var(--br-11xs);
+}
+.checkSmall {
+  margin: 0 !important;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  z-index: 1;
+}
+.checkboxes,
+.stateLayer {
+  display: flex;
+  flex-direction: row;
+}
+.stateLayer {
+  height: 40px;
+  width: 40px;
+  border-radius: var(--br-81xl);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xs);
+  box-sizing: border-box;
+  position: relative;
+}
+.checkboxes {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs);
+}
+.ans {
+  position: relative;
+  display: inline-block;
+  min-width: 78px;
+}
+.yearLabel,
+.yearsCheckboxes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.yearLabel {
+  flex-direction: column;
+  padding: var(--padding-4xs) 0 0;
+}
+.yearsCheckboxes {
+  flex-direction: row;
+  gap: var(--gap-11xs);
+}
+.container1 {
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  border-radius: var(--br-11xs);
+}
+.checkSmall1 {
+  margin: 0 !important;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  z-index: 1;
+}
+.checkboxes1,
+.stateLayer1 {
+  display: flex;
+  flex-direction: row;
+}
+.stateLayer1 {
+  height: 40px;
+  width: 40px;
+  border-radius: var(--br-81xl);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xs);
+  box-sizing: border-box;
+  position: relative;
+}
+.checkboxes1 {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs);
+  z-index: 1;
+}
+.ans1 {
+  position: relative;
+  display: inline-block;
+  min-width: 76px;
+}
+.ansWrapper,
+.yearsCheckboxes1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ansWrapper {
+  flex-direction: column;
+  padding: var(--padding-4xs) 0 0;
+}
+.yearsCheckboxes1 {
+  flex-direction: row;
+  gap: var(--gap-11xs);
+}
+.container2 {
+  margin: 0;
+  height: 18px;
+  width: 18px;
+  position: relative;
+  border-radius: var(--br-11xs);
+}
+.checkSmall2 {
+  margin: 0 !important;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  z-index: 1;
+}
+.checkboxes2,
+.stateLayer2 {
+  display: flex;
+  flex-direction: row;
+}
+.stateLayer2 {
+  height: 40px;
+  width: 40px;
+  border-radius: var(--br-81xl);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xs);
+  box-sizing: border-box;
+  position: relative;
+}
+.checkboxes2 {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs);
+  z-index: 2;
+}
+.ans2 {
+  position: relative;
+  display: inline-block;
+  min-width: 67px;
+}
+.ansContainer {
+  flex-direction: column;
+  padding: var(--padding-4xs) 0 0;
+}
+.ansContainer,
+.experienceYears,
+.yearsCheckboxes2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.yearsCheckboxes2 {
+  flex-direction: row;
+  gap: var(--gap-11xs);
+}
+.experienceYears {
+  flex-direction: column;
+}
+.experienceDivider {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  border-top: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+}
+.experienceOptions {
+  width: 263px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-16xl);
+}
+.experienceFilter,
+.freelancerCard,
+.yearsExperience {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.yearsExperience {
+  height: 470px;
+  width: 405px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.experienceFilter,
+.freelancerCard {
+  flex-direction: row;
+  gap: var(--gap-xl);
+}
+.freelancerCard {
+  flex: 1;
+  align-items: flex-start;
+  min-width: 541px;
+}
+.experienceFilter {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 900px) {
+  .freelancerCard {
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ans,
+  .ans1,
+  .ans2 {
+    font-size: var(--font-size-base);
+  }
+  .experienceOptions {
+    gap: var(--gap-mid);
+  }
+}

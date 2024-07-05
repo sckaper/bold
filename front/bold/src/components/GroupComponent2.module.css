@@ -1,0 +1,206 @@
+.frameChild,
+.frameItem {
+  align-self: stretch;
+  position: relative;
+}
+.frameChild {
+  height: 458px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  display: none;
+}
+.frameItem {
+  flex: 1;
+  border-radius: var(--br-xl) var(--br-xl) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.maxime {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 82px;
+  z-index: 2;
+}
+.frameInner,
+.vectorIcon {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 15px;
+  height: 21px;
+  z-index: 2;
+}
+.frameInner {
+  top: 10px;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  width: 6px;
+  height: 6px;
+}
+.vectorParent {
+  width: 30px;
+  height: 21px;
+  position: relative;
+}
+.frameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.paris {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 41px;
+  z-index: 2;
+}
+.maximeParent,
+.parisWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.parisWrapper {
+  flex-direction: column;
+  padding: var(--padding-7xs) 0 0;
+  font-size: var(--font-size-base);
+}
+.maximeParent {
+  flex-direction: row;
+  gap: var(--gap-5xs-5);
+}
+.technicienRseau {
+  position: relative;
+  font-weight: 500;
+  z-index: 2;
+}
+.groupIcon {
+  align-self: stretch;
+  height: 14.6px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.frameDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.div {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 27px;
+  z-index: 2;
+}
+.frameGroup,
+.technicienRseauParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameGroup {
+  width: 107px;
+  flex-direction: row;
+  font-size: var(--font-size-sm);
+}
+.technicienRseauParent {
+  flex-direction: column;
+  padding: 0 0 var(--padding-smi);
+  gap: var(--gap-11xs);
+}
+.python {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 49px;
+}
+.frameWrapper1,
+.pythonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pythonWrapper {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-darkslateblue-300);
+  padding: var(--padding-8xs) var(--padding-xs);
+  z-index: 2;
+}
+.frameWrapper1 {
+  padding: 0 0 var(--padding-7xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslateblue-200);
+}
+.jour {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 99px;
+  z-index: 2;
+}
+.jourWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.frameParent,
+.frameWrapper,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-8xs);
+}
+.frameWrapper,
+.rectangleParent {
+  box-sizing: border-box;
+}
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 var(--padding-lg);
+}
+.rectangleParent {
+  height: 458px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gainsboro);
+  flex-direction: column;
+  padding: 0 0 var(--padding-base);
+  gap: var(--gap-2xs);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 450px) {
+  .jour,
+  .maxime,
+  .technicienRseau {
+    font-size: var(--font-size-base);
+  }
+}

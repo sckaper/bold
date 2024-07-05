@@ -1,0 +1,100 @@
+.frameChild {
+  width: 250px;
+  height: 162px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  display: none;
+}
+.matthieu {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 92px;
+  z-index: 1;
+}
+.expertEnCyberscurit {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  z-index: 1;
+}
+.expertInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cybermatch {
+  position: relative;
+  display: inline-block;
+  min-width: 71px;
+  z-index: 1;
+}
+.platformName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.freelance {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  min-width: 70px;
+  z-index: 1;
+}
+.badgeContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  flex-shrink: 0;
+}
+.expertBadgeChild {
+  width: 80px;
+  height: 14.6px;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.expertBadge,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  text-align: left;
+  font-size: var(--font-size-3xs);
+}
+.rectangleParent {
+  width: 250px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-xl);
+  background-color: var(--color-white);
+  padding: var(--padding-7xl) var(--padding-6xl) var(--padding-8xl-4);
+  box-sizing: border-box;
+  gap: var(--gap-lg);
+  min-width: 250px;
+  z-index: 3;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 900px) {
+  .rectangleParent {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .matthieu {
+    font-size: var(--font-size-base);
+  }
+}

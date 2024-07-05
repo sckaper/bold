@@ -1,0 +1,130 @@
+.cybermatch {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.cybermatchWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-smi);
+}
+.quiTesVous {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: center;
+  z-index: 1;
+}
+.frameContainer,
+.frameGroup,
+.frameWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameContainer,
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+.frameWrapper {
+  padding: 0 var(--padding-xl) var(--padding-2xs) var(--padding-2xl);
+  text-align: left;
+}
+.frameContainer {
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.meConnecter,
+.ouAvezDj {
+  position: relative;
+  font-weight: 600;
+}
+.meConnecter {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.meConnecterWrapper,
+.ouAvezDjUnCompteParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.meConnecterWrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-43xl);
+  text-align: left;
+}
+.ouAvezDjUnCompteParent {
+  flex-direction: column;
+  gap: var(--gap-4xs);
+}
+.homeLoginCTA {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  font-size: var(--font-size-xl);
+}
+.frameParent,
+.homeAbout {
+  display: flex;
+  max-width: 100%;
+}
+.frameParent {
+  width: 1114px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-49xl);
+}
+.homeAbout {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-9xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1325px) {
+  .frameContainer {
+    flex-wrap: wrap;
+  }
+  .frameParent {
+    gap: var(--gap-15xl);
+  }
+}
+@media screen and (max-width: 900px) {
+  .frameParent {
+    gap: var(--gap-mid);
+  }
+}
+@media screen and (max-width: 450px) {
+  .cybermatch,
+  .quiTesVous {
+    font-size: var(--font-size-3xl);
+  }
+  .meConnecter,
+  .ouAvezDj {
+    font-size: var(--font-size-base);
+  }
+  .meConnecterWrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
